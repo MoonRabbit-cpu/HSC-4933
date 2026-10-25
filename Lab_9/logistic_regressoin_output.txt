@@ -1,0 +1,38 @@
+Logistic Regression
+Response: low
+Predictors: smoke, ht, ui
+Rows used: 189
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                    low   No. Observations:                  189
+Model:                            GLM   Df Residuals:                      185
+Model Family:                Binomial   Df Model:                            3
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -110.00
+Date:                Sun, 25 Oct 2026   Deviance:                       220.01
+Time:                        15:48:49   Pearson chi2:                     188.
+No. Iterations:                     4   Pseudo R-squ. (CS):            0.07467
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -1.3551      0.241     -5.611      0.000      -1.828      -0.882
+smoke          0.6831      0.329      2.075      0.038       0.038       1.329
+ht             1.4174      0.624      2.273      0.023       0.195       2.640
+ui             1.0384      0.428      2.426      0.015       0.200       1.877
+==============================================================================
+
+Odds ratios (exp of coefficients):
+const    0.257925
+smoke    1.980064
+ht       4.126470
+ui       2.824678
+
+Confusion matrix (threshold = 0.5):
+Predicted    0   1
+Actual            
+0          119  11
+1           45  14
+
+Accuracy: 0.7037

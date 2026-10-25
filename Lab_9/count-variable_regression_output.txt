@@ -1,0 +1,60 @@
+Poisson (Count-Variable) Regression
+Response: mhlth_crudeprev
+Predictors: binge_crudeprev, checkup_crudeprev, csmoking_crudeprev, depression_crudeprev, obesity_crudeprev, sleep_crudeprev, selfcare_crudeprev, indeplive_crudeprev, loneliness_crudeprev, foodinsecu_crudeprev, housinsecu_crudeprev
+Rows used: 2299
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:        mhlth_crudeprev   No. Observations:                 2299
+Model:                            GLM   Df Residuals:                     2287
+Model Family:                 Poisson   Df Model:                           11
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -5397.6
+Date:                Sun, 25 Oct 2026   Deviance:                       39.316
+Time:                        15:59:30   Pearson chi2:                     39.2
+No. Iterations:                     4   Pseudo R-squ. (CS):             0.1925
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    1.7032      0.172      9.888      0.000       1.366       2.041
+binge_crudeprev          0.0032      0.003      0.954      0.340      -0.003       0.010
+checkup_crudeprev       -0.0004      0.002     -0.192      0.848      -0.004       0.004
+csmoking_crudeprev       0.0043      0.004      1.100      0.271      -0.003       0.012
+depression_crudeprev     0.0137      0.002      5.800      0.000       0.009       0.018
+obesity_crudeprev        0.0001      0.002      0.076      0.940      -0.003       0.004
+sleep_crudeprev          0.0024      0.002      1.059      0.289      -0.002       0.007
+selfcare_crudeprev      -0.0608      0.022     -2.708      0.007      -0.105      -0.017
+indeplive_crudeprev      0.0522      0.014      3.759      0.000       0.025       0.079
+loneliness_crudeprev     0.0113      0.003      3.717      0.000       0.005       0.017
+foodinsecu_crudeprev    -0.0083      0.007     -1.247      0.212      -0.021       0.005
+housinsecu_crudeprev     0.0150      0.008      1.786      0.074      -0.001       0.032
+========================================================================================
+
+Incidence rate ratios (exp of coefficients):
+const                   5.491486
+binge_crudeprev         1.003177
+checkup_crudeprev       0.999605
+csmoking_crudeprev      1.004280
+depression_crudeprev    1.013747
+obesity_crudeprev       1.000134
+sleep_crudeprev         1.002388
+selfcare_crudeprev      0.941040
+indeplive_crudeprev     1.053541
+loneliness_crudeprev    1.011331
+foodinsecu_crudeprev    0.991775
+housinsecu_crudeprev    1.015145
+
+Variance Inflation Factors (VIF):
+            variable       VIF
+     binge_crudeprev  2.528842
+   checkup_crudeprev  1.750444
+  csmoking_crudeprev  6.934794
+depression_crudeprev  2.216376
+   obesity_crudeprev  2.573017
+     sleep_crudeprev  3.209334
+  selfcare_crudeprev 30.514413
+ indeplive_crudeprev 30.953309
+loneliness_crudeprev  3.432565
+foodinsecu_crudeprev 62.830787
+housinsecu_crudeprev 46.839954
